@@ -4,7 +4,7 @@ import type { RootState, AppDispatch } from '../app/store';
 import { addTodo, toggleTodo, deleteTodo, editTodo } from '../features/todoSlice';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import './Todo.css';
+import './temp.css';
 
 const Todo: React.FC = () => {
   const [text, setText] = useState('');
