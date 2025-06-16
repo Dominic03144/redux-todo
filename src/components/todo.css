@@ -1,0 +1,89 @@
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #e419a0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* 🔁 Animated header movement */
+.moving-header {
+  display: inline-block;
+  animation: slideSideToSide 3s ease-in-out infinite;
+}
+
+@keyframes slideSideToSide {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(20%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+input[type='text'] {
+  padding: 0.5rem;
+  width: 70%;
+  margin-right: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: rgb(238, 231, 231);
+  border: none;
+  border-radius: 4px;
+  margin-left: 0.3rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-text {
+  flex: 1;
+  cursor: pointer;
+}
+
+.todo-text.completed {
+  text-decoration: line-through;
+  color: #25c555;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+
+li {
+  transition: background-color 0.3s ease;
+}
+li:hover {
+  background-color: #f0f8ff;
+}
